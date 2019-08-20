@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ImpressoraBluetooth.Pages.PrintConfigPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Padding="20"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            <Label Text="Informe uma Impressora"
+                   HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold" />
+            <Picker x:Name="pk_impressoras"
+                    Title="--Selecione--"
+                    HorizontalOptions="FillAndExpand" />
+            <Button Text="Testar Impressão"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource ColorButton}"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="TestarImpressao_Clicked"/>
+            <Button Text="Salvar"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource ColorButton}"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="Salvar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
